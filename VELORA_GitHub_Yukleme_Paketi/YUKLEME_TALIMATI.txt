@@ -1,0 +1,16 @@
+VELORA GITHUB YÜKLEME PAKETİ
+
+İçerik:
+- index.html: Ürün görselleri gerçek fotoğraflarla eşleştirilmiş site dosyası
+- assets/: Üç ürün fotoğrafı ve ana sayfa görseli
+
+GitHub'a yükleme:
+1. https://github.com/okayduman299-byte/velora adresini aç.
+2. Add file > Upload files seçeneğine gir.
+3. Bu paketi bilgisayarında aç. index.html dosyasını ve assets klasörünü birlikte sürükleyip bırak.
+4. Depoda aynı isimli dosyalar varsa üzerine yazılmasını onayla.
+5. Commit changes düğmesine bas.
+6. Birkaç dakika sonra https://okayduman299-byte.github.io/velora/ adresini yenile.
+
+Fiyatlar: 1 L plastik 300 TL, 1 L cam 600 TL, 5 L teneke 1.499 TL.
+Not: Bu paket siteyi kendi kendine GitHub'a yüklemez; son yükleme/commit işlemini GitHub'da sen yapmalısın.
