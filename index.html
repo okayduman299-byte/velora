@@ -17,6 +17,11 @@
 main.section#urunler{position:relative;display:block;clear:both;isolation:isolate;z-index:1;width:100%;max-width:1400px;margin:0 auto;background:var(--cream);padding-top:32px}
 .sectionhead{position:relative;display:block;width:100%;margin:0 0 20px;text-align:center}
 @media(min-width:761px){.hero{min-height:360px}.sectionhead h2{margin-top:0}}
+
+/* Final fix: explicitly reserve hero height so catalogue cannot slide behind it */
+section.hero#anasayfa{display:flex!important;position:relative!important;float:none!important;clear:both!important;height:360px!important;min-height:360px!important;max-height:none!important;flex:0 0 360px!important;margin:0!important;padding:40px clamp(20px,6.5vw,100px)!important;overflow:hidden!important;transform:none!important}
+main.section#urunler{display:block!important;position:static!important;float:none!important;clear:both!important;height:auto!important;min-height:0!important;max-height:none!important;flex:none!important;margin:0 auto!important;padding:32px clamp(16px,5vw,72px) 12px!important;transform:none!important;background:var(--cream)!important}
+@media(max-width:760px){section.hero#anasayfa{height:320px!important;min-height:320px!important;flex-basis:320px!important}main.section#urunler{padding-top:28px!important}}
 </style></head><body>
 <div class="top"><div><span class="gold">✦</span> %100 Doğal &nbsp; | &nbsp; Marmara'nın Bereketi &nbsp; | &nbsp; ♡ Güvenli Alışveriş</div><div class="right">♧ 750 TL ve üzeri alışverişlerde kargo bedava &nbsp;　♙ Hesabım &nbsp;　♡</div></div>
 <header class="head"><a href="#anasayfa" style="text-decoration:none"><div class="brand">VELORA<small>NATÜREL SIZMA ZEYTİNYAĞI</small></div></a><nav class="nav"><a href="#anasayfa">Ana Sayfa</a><a class="active" href="#urunler">Ürünler</a><a href="#hakkimizda">Hakkımızda</a><a href="#hakkimizda">Blog</a><a href="#iletisim">İletişim</a></nav><div class="tools"><div class="search"><input id="search" placeholder="Ürün ara..." aria-label="Ürün ara"><button onclick="searchProducts()" aria-label="Ara">⌕</button></div><button class="iconbtn" onclick="event.stopPropagation();toast('Favoriler sonraki aşamada bağlanacak.')">♡</button><button class="iconbtn" onclick="showCart()">🛒<span class="count" id="count">0</span></button></div></header>
