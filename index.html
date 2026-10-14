@@ -25,6 +25,73 @@ main.section#urunler .grid{position:relative!important;display:grid!important;ma
 .faq{background:#fbf8f2;padding:52px 20px 58px;border-top:1px solid #e7dfd2}.faq-inner{max-width:850px;margin:0 auto}.faq .eyebrow{text-align:center;letter-spacing:.2em;color:#8a6b2c;font-size:11px}.faq h2{text-align:center;font:clamp(29px,4vw,38px) Georgia,serif;font-weight:400;margin:8px 0 12px;color:#183629}.faq-intro{text-align:center;color:#6c685f;line-height:1.7;margin:0 auto 26px;max-width:640px}.faq details{border-bottom:1px solid #e4dccf;padding:0 4px}.faq summary{cursor:pointer;list-style:none;padding:17px 28px 17px 0;font-weight:600;color:#20372b;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:4px;top:13px;font-size:23px;color:#a78238;font-weight:400}.faq details[open] summary:after{content:"−"}.faq details p{color:#625e56;line-height:1.8;margin:0;padding:0 20px 18px 0;font-size:14px}.faq details a{color:#765b25}.faq-contact{display:table;margin:26px auto 0;background:#173629;color:#fff8ec;text-decoration:none;padding:13px 19px;border-radius:4px;font-size:13px}.rating{color:#6c685f;font-size:12px;margin:8px 0}
 
 .olive-story{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,1.15fr);align-items:center;gap:clamp(24px,6vw,78px);padding:30px clamp(20px,9vw,130px);background:#f0eadc;border-top:1px solid #e2d8c6;border-bottom:1px solid #e2d8c6;overflow:hidden}.olive-art{max-width:390px;width:100%;margin:auto;position:relative}.olive-art:before{content:"";position:absolute;inset:12% 9%;border:1px solid #c7b58e;border-radius:50%;transform:rotate(-18deg)}.olive-art svg{display:block;width:100%;height:auto;position:relative;filter:drop-shadow(0 8px 12px #2a301512)}.olive-copy{max-width:590px}.olive-kicker{font-size:11px;letter-spacing:.22em;font-weight:bold;color:#8c6a2a;margin:0 0 14px}.olive-copy h2{font:clamp(31px,4vw,48px)/1.12 Georgia,serif;font-weight:400;color:#193528;margin:0 0 18px}.olive-copy>p:not(.olive-kicker){font-size:15px;line-height:1.9;color:#5f5d53;max-width:510px;margin:0 0 24px}.olive-cta{display:inline-flex;align-items:center;gap:18px;padding:13px 18px;background:#173629;color:#fff8eb;text-decoration:none;border-radius:3px;font-size:13px;letter-spacing:.03em}.olive-cta:hover{background:#274b39}@media(max-width:650px){.olive-story{grid-template-columns:1fr;gap:8px;padding:25px 24px 34px}.olive-art{max-width:250px}.olive-copy{text-align:center;margin:auto}.olive-copy>p:not(.olive-kicker){font-size:14px}.olive-copy h2{font-size:33px}}
+
+/* Premium visual polish: stronger hero, consistent product photography, responsive spacing */
+.hero{
+  min-height:460px!important;height:460px!important;
+  background-image:linear-gradient(90deg,rgba(10,27,19,.96) 0%,rgba(10,27,19,.84) 38%,rgba(10,27,19,.34) 72%,rgba(10,27,19,.12) 100%),url('VELORA_GitHub_Yukleme_Paketi/assets/velora-cam-1l.jpg')!important;
+  background-position:center,right 46%!important;background-size:cover!important;
+  border-bottom:3px solid #a47b2b;
+}
+.hero-content{max-width:610px;position:relative;z-index:1}
+.hero h1{letter-spacing:-.025em;text-shadow:0 3px 22px #0004}
+.hero p{font-size:17px;max-width:490px}
+.hero .points{gap:12px 20px}
+.hero .points span{font-size:13px}
+.sectionhead h2{color:#193528}
+.sectionhead p{line-height:1.7}
+main.section#urunler .grid{gap:24px}
+main.section#urunler .card{
+  border-color:#e4dac8;border-radius:4px;
+  box-shadow:0 10px 28px rgba(38,43,28,.07);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+main.section#urunler .card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(38,43,28,.12)}
+main.section#urunler .photo{
+  height:clamp(270px,29vw,360px)!important;
+  background:radial-gradient(ellipse at 50% 42%,#fffdf7 0%,#f2ecdf 62%,#e7dece 100%);
+  border-bottom:1px solid #e7dece;
+}
+main.section#urunler .photo img{
+  object-fit:contain!important;padding:20px!important;
+  mix-blend-mode:multiply;transform:scale(.97);
+}
+main.section#urunler .card:hover .photo img{transform:scale(1.015)}
+main.section#urunler .info{padding:19px 19px 20px}
+main.section#urunler .info h3{font:19px/1.35 Georgia,serif;font-weight:400;color:#193528}
+main.section#urunler .subtitle{color:#8a6b2c;font-weight:600;font-size:13px}
+main.section#urunler .desc{font-size:13px;line-height:1.7;color:#6a675d}
+main.section#urunler .price{font:27px Georgia,serif;font-weight:400;color:#193528}
+main.section#urunler .add{border-radius:3px;letter-spacing:.01em}
+main.section#urunler .badge{border-radius:2px;width:auto;height:auto;min-width:62px;padding:9px 11px;letter-spacing:.02em}
+main.section#urunler .wish{box-shadow:0 2px 10px #0001}
+.benefits{border-top:1px solid #e5dac7;border-bottom:1px solid #e5dac7}
+.story{max-width:900px;padding-top:54px;padding-bottom:58px}
+.story h2{color:#193528;font-size:clamp(31px,4vw,43px)}
+.story p{font-size:15px}
+@media(max-width:760px){
+  .hero{height:390px!important;min-height:390px!important;background-position:61% center!important}
+  .hero-content{max-width:540px}
+  .hero h1{font-size:clamp(42px,8vw,58px)}
+  main.section#urunler .grid{gap:14px}
+  main.section#urunler .photo{height:250px!important}
+  main.section#urunler .photo img{padding:14px!important}
+  main.section#urunler .info{padding:13px}
+  main.section#urunler .info h3{font-size:16px}
+  main.section#urunler .price{font-size:23px}
+}
+@media(max-width:470px){
+  .hero{height:380px!important;min-height:380px!important;padding:28px 20px!important;background-position:64% center!important}
+  .hero p{font-size:15px}
+  .hero .points{display:grid;gap:7px}
+  main.section#urunler .photo{height:300px!important}
+  main.section#urunler .photo img{padding:18px!important}
+  main.section#urunler .info{padding:17px}
+  main.section#urunler .info h3{font-size:18px}
+  main.section#urunler .buyrow{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){main.section#urunler .card,main.section#urunler .photo img{transition:none!important}}
+
 </style></head><body>
 <div class="top"><div><span class="gold">✦</span> Marmara’nın Bereketi &nbsp; | &nbsp; VELORA zeytinyağı seçenekleri</div><div class="right">Teslimat ve kargo ücreti sipariş öncesinde teyit edilir</div></div>
 <header class="head"><a href="#anasayfa" style="text-decoration:none"><div class="brand">VELORA<small>NATÜREL SIZMA ZEYTİNYAĞI</small></div></a><nav class="nav"><a href="#anasayfa">Ana Sayfa</a><a class="active" href="#urunler">Ürünler</a><a href="hakkimizda.html">Hakkımızda</a><a href="#sss">Sıkça Sorulan Sorular</a><a href="#iletisim">İletişim</a></nav><div class="tools"><div class="search"><input id="search" placeholder="Ürün ara..." aria-label="Ürün ara"><button onclick="searchProducts()" aria-label="Ara">⌕</button></div><button class="iconbtn" onclick="event.stopPropagation();toast('Favoriler sonraki aşamada bağlanacak.')">♡</button><button class="iconbtn" onclick="showCart()">🛒<span class="count" id="count">0</span></button></div></header>
