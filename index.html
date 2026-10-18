@@ -164,6 +164,35 @@ main.section#urunler .card:hover{box-shadow:0 22px 48px #2730241c!important}
 /* Tone down the reflective tin photo while preserving label detail */
 .card[data-name="teneke"] .photo img{filter:brightness(.78) contrast(.96) saturate(.92)!important;}
 .card[data-name="teneke"]:hover .photo img{filter:brightness(.82) contrast(.98) saturate(.94)!important;}
+
+/* Consistent premium product image panels */
+.products .card .photo,
+.product-grid .card .photo,
+.grid-products .card .photo{
+  height:clamp(250px,27vw,330px)!important;
+  display:flex;align-items:center;justify-content:center;
+  padding:16px!important;box-sizing:border-box;
+  background:linear-gradient(145deg,#f5efe3 0%,#e9dfce 100%);
+}
+.products .card .photo img,
+.product-grid .card .photo img,
+.grid-products .card .photo img{
+  width:100%;height:100%;object-fit:contain!important;
+  object-position:center!important;padding:4px!important;
+  box-sizing:border-box;mix-blend-mode:multiply;
+}
+.card[data-name="plastik"] .photo img,
+.card[data-name="cam"] .photo img{
+  padding:5px!important;
+}
+.card[data-name="teneke"] .photo img{
+  padding:0!important;transform:scale(.94);
+  filter:brightness(.84) contrast(.98) saturate(.94)!important;
+}
+.card[data-name="teneke"]:hover .photo img{transform:scale(.97);filter:brightness(.87) contrast(1) saturate(.96)!important;}
+@media(max-width:600px){
+  .products .card .photo,.product-grid .card .photo,.grid-products .card .photo{height:260px!important;padding:12px!important}
+}
 </style>
 <style>
 .wholesale-section{background:#10251b;color:#f7f2e7;padding:clamp(42px,7vw,86px) clamp(18px,6vw,78px);border-top:2px solid #b79553;border-bottom:2px solid #b79553}
