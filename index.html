@@ -160,6 +160,10 @@ main.section#urunler .card:hover{box-shadow:0 22px 48px #2730241c!important}
 /* Ensure the hero uses the real repository asset path */
 .hero{background-image:linear-gradient(90deg,rgba(10,28,19,.96) 0%,rgba(10,28,19,.82) 36%,rgba(10,28,19,.3) 72%,rgba(10,28,19,.08) 100%),url('VELORA_GitHub_Yukleme_Paketi/assets/velora-cam-1l.jpg')!important}
 @media(max-width:470px){.hero#anasayfa{background-image:linear-gradient(90deg,rgba(10,28,19,.94),rgba(10,28,19,.62)),url('VELORA_GitHub_Yukleme_Paketi/assets/velora-cam-1l.jpg')!important}}
+</style><style>
+/* Tone down the reflective tin photo while preserving label detail */
+.card[data-name="teneke"] .photo img{filter:brightness(.78) contrast(.96) saturate(.92)!important;}
+.card[data-name="teneke"]:hover .photo img{filter:brightness(.82) contrast(.98) saturate(.94)!important;}
 </style></head><body>
 <div class="top"><div><span class="gold">✦</span> Marmara’nın Bereketi &nbsp; | &nbsp; VELORA zeytinyağı seçenekleri</div><div class="right">Teslimat ve kargo ücreti sipariş öncesinde teyit edilir</div></div>
 <header class="head"><a href="#anasayfa" style="text-decoration:none"><div class="brand">VELORA<small>NATÜREL SIZMA ZEYTİNYAĞI</small></div></a><nav class="nav"><a href="#anasayfa">Ana Sayfa</a><a class="active" href="#urunler">Ürünler</a><a href="hakkimizda.html">Hakkımızda</a><a href="#sss">Sıkça Sorulan Sorular</a><a href="#iletisim">İletişim</a></nav><div class="tools"><div class="search"><input id="search" placeholder="Ürün ara..." aria-label="Ürün ara"><button onclick="searchProducts()" aria-label="Ara">⌕</button></div><button class="iconbtn" onclick="event.stopPropagation();toast('Favoriler sonraki aşamada bağlanacak.')">♡</button><button class="iconbtn" onclick="showCart()">🛒<span class="count" id="count">0</span></button></div></header>
