@@ -164,9 +164,32 @@ main.section#urunler .card:hover{box-shadow:0 22px 48px #2730241c!important}
 /* Tone down the reflective tin photo while preserving label detail */
 .card[data-name="teneke"] .photo img{filter:brightness(.78) contrast(.96) saturate(.92)!important;}
 .card[data-name="teneke"]:hover .photo img{filter:brightness(.82) contrast(.98) saturate(.94)!important;}
+</style>
+<style>
+.wholesale-section{background:#10251b;color:#f7f2e7;padding:clamp(42px,7vw,86px) clamp(18px,6vw,78px);border-top:2px solid #b79553;border-bottom:2px solid #b79553}
+.wholesale-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,6vw,86px);align-items:center}
+.wholesale-kicker{font-size:11px;letter-spacing:.22em;color:#d9b66f;font-weight:700;margin:0 0 18px}
+.wholesale-copy h2{font:clamp(34px,4.5vw,54px)/1.08 Georgia,serif;font-weight:400;letter-spacing:-.025em;margin:0 0 18px;color:#fff8e9}
+.wholesale-copy>p:not(.wholesale-kicker):not(.wholesale-note){font-size:15px;line-height:1.9;color:#d8d7c9;max-width:620px;margin:0 0 22px}
+.wholesale-tags{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 27px}
+.wholesale-tags span{font-size:11px;border:1px solid #607060;color:#e6dfcf;padding:9px 11px}
+.wholesale-cta{display:inline-flex;gap:24px;align-items:center;background:#b79553;color:#13271c;text-decoration:none;font-size:13px;font-weight:700;padding:15px 19px;transition:background .2s}
+.wholesale-cta:hover{background:#d2b778}
+.wholesale-note{font-size:11px;color:#bcb9aa;line-height:1.7;margin:15px 0 0}
+.wholesale-panel{background:#f7f3ea;color:#183629;padding:clamp(24px,4vw,42px);border:1px solid #b79553;box-shadow:0 18px 50px #0002}
+.wholesale-panel-mark{font:italic 54px Georgia,serif;color:#b79553;line-height:1}
+.wholesale-panel-label{font-size:10px;letter-spacing:.23em;color:#8a6b35;margin:10px 0 12px}
+.wholesale-panel h3{font:30px/1.15 Georgia,serif;font-weight:400;margin:0 0 20px}
+.wholesale-line{height:1px;background:#d9cfbb;margin-bottom:12px}
+.wholesale-benefit{display:flex;gap:15px;align-items:flex-start;padding:14px 0;border-bottom:1px solid #e6ddcf}
+.wholesale-benefit:last-child{border-bottom:0}
+.wholesale-benefit>span{font:18px Georgia,serif;color:#ad8844}
+.wholesale-benefit strong{display:block;font-size:13px;font-weight:600}
+.wholesale-benefit small{display:block;font-size:12px;line-height:1.6;color:#777469;margin-top:5px}
+@media(max-width:760px){.wholesale-inner{grid-template-columns:1fr;gap:28px}.wholesale-copy h2{font-size:39px}.wholesale-panel h3{font-size:27px}}
 </style></head><body>
 <div class="top"><div><span class="gold">✦</span> Marmara’nın Bereketi &nbsp; | &nbsp; VELORA zeytinyağı seçenekleri</div><div class="right">Teslimat ve kargo ücreti sipariş öncesinde teyit edilir</div></div>
-<header class="head"><a href="#anasayfa" style="text-decoration:none"><div class="brand">VELORA<small>NATÜREL SIZMA ZEYTİNYAĞI</small></div></a><nav class="nav"><a href="#anasayfa">Ana Sayfa</a><a class="active" href="#urunler">Ürünler</a><a href="hakkimizda.html">Hakkımızda</a><a href="#sss">Sıkça Sorulan Sorular</a><a href="#iletisim">İletişim</a></nav><div class="tools"><div class="search"><input id="search" placeholder="Ürün ara..." aria-label="Ürün ara"><button onclick="searchProducts()" aria-label="Ara">⌕</button></div><button class="iconbtn" onclick="event.stopPropagation();toast('Favoriler sonraki aşamada bağlanacak.')">♡</button><button class="iconbtn" onclick="showCart()">🛒<span class="count" id="count">0</span></button></div></header>
+<header class="head"><a href="#anasayfa" style="text-decoration:none"><div class="brand">VELORA<small>NATÜREL SIZMA ZEYTİNYAĞI</small></div></a><nav class="nav"><a href="#anasayfa">Ana Sayfa</a><a class="active" href="#urunler">Ürünler</a><a href="hakkimizda.html">Hakkımızda</a><a href="#sss">Sıkça Sorulan Sorular</a><a href="#iletisim">İletişim</a><a href="#toptan-satis">Toptan Satış</a></nav><div class="tools"><div class="search"><input id="search" placeholder="Ürün ara..." aria-label="Ürün ara"><button onclick="searchProducts()" aria-label="Ara">⌕</button></div><button class="iconbtn" onclick="event.stopPropagation();toast('Favoriler sonraki aşamada bağlanacak.')">♡</button><button class="iconbtn" onclick="showCart()">🛒<span class="count" id="count">0</span></button></div></header>
 <section class="hero" id="anasayfa"><div class="hero-content"><div class="eyebrow">Marmara'nın bereketi · VELORA</div><h1>Doğadan<br>Sofranıza</h1><p>Gerçek zeytinyağı. Özenle seçilen zeytinlerden, sofranız için hazırlanan VELORA lezzeti.</p><div class="points"><span>Üç ambalaj seçeneği</span><span>WhatsApp sipariş desteği</span><span>Teslimat öncesi teyit</span></div></div></section>
 <section class="olive-story" aria-labelledby="oliveStoryTitle">
   <div class="olive-art" role="img" aria-label="Zeytin dalları ve zeytinleri temsil eden dekoratif çizim">
